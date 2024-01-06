@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 
 const cors = require('cors');
@@ -6,6 +7,7 @@ const {checkSchema} = require('express-validator');
 
 const configDB = require('./configDB');
 const taskCltr = require('./task-Cltr');
+const {config} = require('dotenv');
 
 const app = express();
 app.use(express.json());

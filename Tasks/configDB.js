@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const configDB = async () => {
-  const url =
-    'mongodb+srv://winaycv:VeLG648oCVCFCVa5@cluster0.o9umnpw.mongodb.net';
+  const url = process.env.DB_URL;
+
   const name = 'task';
 
   try {
