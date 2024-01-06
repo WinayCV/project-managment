@@ -16,7 +16,7 @@ app.post('/events', queryCltr.event);
 
 const handleEvent = async (type, payload) => {
   try {
-    const {_id, title} = payload;
+    const {_id, title, startDate} = payload;
 
     if (type === 'ProjectCreated') {
       const existingQuery = await Query.findOne({projectId: _id});
@@ -25,6 +25,7 @@ const handleEvent = async (type, payload) => {
         const newQuery = new Query({
           projectId: _id,
           projectTitle: title,
+          startDate: startDate,
         });
         await newQuery.save();
       }
