@@ -43,7 +43,7 @@ This application serves as a **Project Management System** allowing users to cre
 
 1. Clone the repository: `git clone git@github.com:WinayCV/project-managment.git`.
 2. Navigate to the project directory: `cd project-managment`.
-3. Install dependencies: `npm install`.
+3. Install dependencies:Navigate to each folder and `npm install` .
 4. Configure environment variables, if any.
 5. Start the application: `npm start` or as per your setup.
 
